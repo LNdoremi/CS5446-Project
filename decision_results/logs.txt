@@ -1,0 +1,434 @@
+!python run_dt_atari.py --seed 123 --context_length 90 --epochs 5 --model_type 'reward_conditioned' --num_steps 10000 --num_buffers 50 --game 'Breakout' --batch_size 32 --data_dir_prefix /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/
+loading from buffer 45 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x558aab468000 @  0x7f325324c1e7 0x7f32515241fe 0x7f3251524294 0x7f3251567655 0x7f3251529092 0x558a78bb1b18 0x558a78bb2b59 0x558a78bda1d9 0x558a78b20af2 0x558a78b4f030 0x558a78bb29c8 0x558a78bda1d9 0x558a78b20af2 0x558a78b4f030 0x558a78bb29c8 0x558a78bda1d9 0x558a78b4ee94 0x558a78bb29c8 0x558a78bd9544 0x558a78b4ee94 0x558a78bb29c8 0x558a78bd9544 0x558a78b4ee94 0x558a78bb29c8 0x558a78bd9544 0x558a78b20af2 0x558a78b223a8 0x558a78b898ac 0x558a78bb175c 0x558a78bb2b59 0x558a78bda1d9
+Loaded replay buffer ckpt 45 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 17002 loaded transitions and there are now 17002 transitions total divided into 10 trajectories
+load buffer done
+max rtg is 85
+max timestep is 2005
+create_dataset done
+train_dataset created
+model generated, starting training
+epoch 1 iter 522: train loss 0.77019. lr 5.602520e-04: 100% 523/523 [04:27<00:00,  1.95it/s]
+target return: 90, eval return: 3
+epoch 2 iter 522: train loss 0.42685. lr 4.506170e-04: 100% 523/523 [04:29<00:00,  1.94it/s]
+target return: 90, eval return: 4
+epoch 3 iter 522: train loss 0.20886. lr 3.005347e-04: 100% 523/523 [04:33<00:00,  1.91it/s]
+target return: 90, eval return: 6
+epoch 4 iter 522: train loss 0.10751. lr 1.503088e-04: 100% 523/523 [04:29<00:00,  1.94it/s]
+target return: 90, eval return: 7
+epoch 5 iter 522: train loss 0.07199. lr 6.000000e-05: 100% 523/523 [04:28<00:00,  1.95it/s]
+target return: 90, eval return: 5
+model training done
+
+!python run_dt_atari.py --seed 123 --context_length 90 --epochs 5 --model_type 'reward_conditioned' --num_steps 50000 --num_buffers 50 --game 'Breakout' --batch_size 64 --data_dir_prefix /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/
+loading from buffer 45 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x5581c210a000 @  0x7effd0ef71e7 0x7effcf1cf1fe 0x7effcf1cf294 0x7effcf212655 0x7effcf1d4092 0x5581a5e82b18 0x5581a5e83b59 0x5581a5eab1d9 0x5581a5df1af2 0x5581a5e20030 0x5581a5e839c8 0x5581a5eab1d9 0x5581a5df1af2 0x5581a5e20030 0x5581a5e839c8 0x5581a5eab1d9 0x5581a5e1fe94 0x5581a5e839c8 0x5581a5eaa544 0x5581a5e1fe94 0x5581a5e839c8 0x5581a5eaa544 0x5581a5e1fe94 0x5581a5e839c8 0x5581a5eaa544 0x5581a5df1af2 0x5581a5df33a8 0x5581a5e5a8ac 0x5581a5e8275c 0x5581a5e83b59 0x5581a5eab1d9
+Loaded replay buffer ckpt 45 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 17002 loaded transitions and there are now 17002 transitions total divided into 10 trajectories
+loading from buffer 2 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55838906a000 @  0x7effd0ef71e7 0x7effcf1cf1fe 0x7effcf1cf294 0x7effcf212655 0x7effcf1d4092 0x5581a5e82b18 0x5581a5e83b59 0x5581a5eab1d9 0x5581a5df1af2 0x5581a5e20030 0x5581a5e839c8 0x5581a5eab1d9 0x5581a5df1af2 0x5581a5e20030 0x5581a5e839c8 0x5581a5eab1d9 0x5581a5e1fe94 0x5581a5e839c8 0x5581a5eaa544 0x5581a5e1fe94 0x5581a5e839c8 0x5581a5eaa544 0x5581a5e1fe94 0x5581a5e839c8 0x5581a5eaa544 0x5581a5df1af2 0x5581a5df33a8 0x5581a5e5a8ac 0x5581a5e8275c 0x5581a5e83b59 0x5581a5eab1d9
+Loaded replay buffer ckpt 2 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 6399 loaded transitions and there are now 23401 transitions total divided into 20 trajectories
+loading from buffer 28 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55852ebd6000 @  0x7effd0ef71e7 0x7effcf1cf1fe 0x7effcf1cf294 0x7effcf212655 0x7effcf1d4092 0x5581a5e82b18 0x5581a5e83b59 0x5581a5eab1d9 0x5581a5df1af2 0x5581a5e20030 0x5581a5e839c8 0x5581a5eab1d9 0x5581a5df1af2 0x5581a5e20030 0x5581a5e839c8 0x5581a5eab1d9 0x5581a5e1fe94 0x5581a5e839c8 0x5581a5eaa544 0x5581a5e1fe94 0x5581a5e839c8 0x5581a5eaa544 0x5581a5e1fe94 0x5581a5e839c8 0x5581a5eaa544 0x5581a5df1af2 0x5581a5df33a8 0x5581a5e5a8ac 0x5581a5e8275c 0x5581a5e83b59 0x5581a5eab1d9
+Loaded replay buffer ckpt 28 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 15858 loaded transitions and there are now 39259 transitions total divided into 30 trajectories
+loading from buffer 34 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55838906a000 @  0x7effd0ef71e7 0x7effcf1cf1fe 0x7effcf1cf294 0x7effcf212655 0x7effcf1d4092 0x5581a5e82b18 0x5581a5e83b59 0x5581a5eab1d9 0x5581a5df1af2 0x5581a5e20030 0x5581a5e839c8 0x5581a5eab1d9 0x5581a5df1af2 0x5581a5e20030 0x5581a5e839c8 0x5581a5eab1d9 0x5581a5e1fe94 0x5581a5e839c8 0x5581a5eaa544 0x5581a5e1fe94 0x5581a5e839c8 0x5581a5eaa544 0x5581a5e1fe94 0x5581a5e839c8 0x5581a5eaa544 0x5581a5df1af2 0x5581a5df33a8 0x5581a5e5a8ac 0x5581a5e8275c 0x5581a5e83b59 0x5581a5eab1d9
+Loaded replay buffer ckpt 34 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 13835 loaded transitions and there are now 53094 transitions total divided into 40 trajectories
+load buffer done
+max rtg is 98
+max timestep is 2005
+create_dataset done
+train_dataset created
+model generated, starting training
+epoch 1 iter 825: train loss 0.68894. lr 5.599485e-04: 100% 826/826 [08:33<00:00,  1.61it/s]
+target return: 90, eval return: 11
+epoch 2 iter 825: train loss 0.32647. lr 4.501954e-04: 100% 826/826 [08:39<00:00,  1.59it/s]
+target return: 90, eval return: 13
+epoch 3 iter 825: train loss 0.16381. lr 3.001692e-04: 100% 826/826 [08:41<00:00,  1.58it/s]
+target return: 90, eval return: 11
+epoch 4 iter 825: train loss 0.08326. lr 1.500977e-04: 100% 826/826 [08:46<00:00,  1.57it/s]
+target return: 90, eval return: 9
+epoch 5 iter 825: train loss 0.06685. lr 6.000000e-05: 100% 826/826 [08:46<00:00,  1.57it/s]
+target return: 90, eval return: 14
+model training done
+
+!python run_dt_atari.py --seed 123 --context_length 90 --epochs 5 --model_type 'reward_conditioned' --num_steps 100000 --num_buffers 50 --trajectories_per_buffer 5 --game 'Breakout' --batch_size 64 --data_dir_prefix /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/
+loading from buffer 45 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x5649a33c6000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 45 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 8874 loaded transitions and there are now 8874 transitions total divided into 5 trajectories
+loading from buffer 2 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x564b72fde000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 2 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 3244 loaded transitions and there are now 12118 transitions total divided into 10 trajectories
+loading from buffer 28 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x5649a33c6000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 28 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 8000 loaded transitions and there are now 20118 transitions total divided into 15 trajectories
+loading from buffer 34 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x564b72fde000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 34 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 6762 loaded transitions and there are now 26880 transitions total divided into 20 trajectories
+loading from buffer 38 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x564d18100000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 38 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 8164 loaded transitions and there are now 35044 transitions total divided into 25 trajectories
+loading from buffer 17 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x564b54154000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 17 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 9260 loaded transitions and there are now 44304 transitions total divided into 30 trajectories
+loading from buffer 19 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x564d18100000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 19 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7879 loaded transitions and there are now 52183 transitions total divided into 35 trajectories
+loading from buffer 42 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x564b54154000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 42 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 5181 loaded transitions and there are now 57364 transitions total divided into 40 trajectories
+loading from buffer 22 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x564d18100000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 22 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 6136 loaded transitions and there are now 63500 transitions total divided into 45 trajectories
+loading from buffer 33 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x564b54154000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 33 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 6102 loaded transitions and there are now 69602 transitions total divided into 50 trajectories
+loading from buffer 32 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x564d18100000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 32 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 10311 loaded transitions and there are now 79913 transitions total divided into 55 trajectories
+loading from buffer 49 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x564b54154000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 49 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7434 loaded transitions and there are now 87347 transitions total divided into 60 trajectories
+loading from buffer 47 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x564d18100000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 47 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7681 loaded transitions and there are now 95028 transitions total divided into 65 trajectories
+loading from buffer 9 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x564b54154000 @  0x7f803cbd11e7 0x7f803aea91fe 0x7f803aea9294 0x7f803aeec655 0x7f803aeae092 0x564971545b18 0x564971546b59 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714b4af2 0x5649714e3030 0x5649715469c8 0x56497156e1d9 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714e2e94 0x5649715469c8 0x56497156d544 0x5649714b4af2 0x5649714b63a8 0x56497151d8ac 0x56497154575c 0x564971546b59 0x56497156e1d9
+Loaded replay buffer ckpt 9 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 6215 loaded transitions and there are now 101243 transitions total divided into 70 trajectories
+load buffer done
+max rtg is 98
+max timestep is 2654
+create_dataset done
+train_dataset created
+model generated, starting training
+epoch 1 iter 1577: train loss 0.62566. lr 5.598814e-04: 100% 1578/1578 [15:12<00:00,  1.73it/s]
+target return: 90, eval return: 21
+epoch 2 iter 1577: train loss 0.34000. lr 4.501022e-04: 100% 1578/1578 [15:10<00:00,  1.73it/s]
+target return: 90, eval return: 26
+epoch 3 iter 1577: train loss 0.16049. lr 3.000885e-04: 100% 1578/1578 [15:15<00:00,  1.72it/s]
+target return: 90, eval return: 30
+epoch 4 iter 1577: train loss 0.10928. lr 1.500511e-04: 100% 1578/1578 [15:18<00:00,  1.72it/s]
+target return: 90, eval return: 20
+epoch 5 iter 1577: train loss 0.06057. lr 6.000000e-05: 100% 1578/1578 [15:20<00:00,  1.71it/s]
+target return: 90, eval return: 23
+saving training record
+model training done
+
+!python run_dt_atari.py --seed 123 --context_length 90 --epochs 5 --model_type 'reward_conditioned' --num_steps 250000 --num_buffers 50 --trajectories_per_buffer 5 --game 'Breakout' --batch_size 64 --data_dir_prefix /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/
+loading from buffer 32 which has 27355 already loaded
+Loaded replay buffer ckpt 32 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 35965 loaded transitions and there are now 170430 transitions total divided into 115 trajectories
+loading from buffer 16 which has 0 already loaded
+Loaded replay buffer ckpt 16 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7221 loaded transitions and there are now 177651 transitions total divided into 120 trajectories
+loading from buffer 4 which has 0 already loaded
+Loaded replay buffer ckpt 4 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 5956 loaded transitions and there are now 183607 transitions total divided into 125 trajectories
+loading from buffer 49 which has 7434 already loaded
+Loaded replay buffer ckpt 49 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 14886 loaded transitions and there are now 191059 transitions total divided into 130 trajectories
+loading from buffer 3 which has 0 already loaded
+Loaded replay buffer ckpt 3 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 4789 loaded transitions and there are now 195848 transitions total divided into 135 trajectories
+loading from buffer 2 which has 3244 already loaded
+Loaded replay buffer ckpt 2 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7148 loaded transitions and there are now 199752 transitions total divided into 140 trajectories
+loading from buffer 20 which has 0 already loaded
+Loaded replay buffer ckpt 20 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 6984 loaded transitions and there are now 206736 transitions total divided into 145 trajectories
+loading from buffer 39 which has 0 already loaded
+Loaded replay buffer ckpt 39 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7458 loaded transitions and there are now 214194 transitions total divided into 150 trajectories
+loading from buffer 2 which has 7148 already loaded
+Loaded replay buffer ckpt 2 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 10092 loaded transitions and there are now 217138 transitions total divided into 155 trajectories
+loading from buffer 20 which has 6984 already loaded
+Loaded replay buffer ckpt 20 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 15973 loaded transitions and there are now 226127 transitions total divided into 160 trajectories
+loading from buffer 47 which has 14176 already loaded
+Loaded replay buffer ckpt 47 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 22748 loaded transitions and there are now 234699 transitions total divided into 165 trajectories
+loading from buffer 48 which has 0 already loaded
+Loaded replay buffer ckpt 48 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7837 loaded transitions and there are now 242536 transitions total divided into 170 trajectories
+loading from buffer 7 which has 0 already loaded
+Loaded replay buffer ckpt 7 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 8274 loaded transitions and there are now 250810 transitions total divided into 175 trajectories
+load buffer done
+max rtg is 98
+max timestep is 2654
+create_dataset done
+train_dataset created
+model generated, starting training
+epoch 1 iter 3914: train loss 0.59214. lr 5.598373e-04: 100% 3915/3915 [36:50<00:00,  1.77it/s]
+target return: 90, eval return: 52
+epoch 2 iter 3914: train loss 0.32854. lr 4.500412e-04: 100% 3915/3915 [35:38<00:00,  1.83it/s]
+target return: 90, eval return: 26
+epoch 3 iter 3914: train loss 0.19314. lr 3.000357e-04: 100% 3915/3915 [36:10<00:00,  1.80it/s]
+target return: 90, eval return: 18
+epoch 4 iter 3914: train loss 0.13039. lr 1.500206e-04: 100% 3915/3915 [36:31<00:00,  1.79it/s]
+target return: 90, eval return: 18
+epoch 5 iter 3914: train loss 0.10753. lr 6.000000e-05: 100% 3915/3915 [36:49<00:00,  1.77it/s]
+target return: 90, eval return: 18
+saving training record
+model training done
+
+!python run_dt_atari.py --seed 123 --context_length 90 --epochs 5 --model_type 'reward_conditioned' --num_steps 300000 --num_buffers 50 --trajectories_per_buffer 5 --game 'Breakout' --batch_size 64 --data_dir_prefix /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/
+loading from buffer 39 which has 0 already loaded
+Loaded replay buffer ckpt 39 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7458 loaded transitions and there are now 214194 transitions total divided into 150 trajectories
+loading from buffer 2 which has 7148 already loaded
+Loaded replay buffer ckpt 2 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 10092 loaded transitions and there are now 217138 transitions total divided into 155 trajectories
+loading from buffer 20 which has 6984 already loaded
+Loaded replay buffer ckpt 20 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 15973 loaded transitions and there are now 226127 transitions total divided into 160 trajectories
+loading from buffer 47 which has 14176 already loaded
+Loaded replay buffer ckpt 47 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 22748 loaded transitions and there are now 234699 transitions total divided into 165 trajectories
+loading from buffer 48 which has 0 already loaded
+Loaded replay buffer ckpt 48 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7837 loaded transitions and there are now 242536 transitions total divided into 170 trajectories
+loading from buffer 7 which has 0 already loaded
+Loaded replay buffer ckpt 7 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 8274 loaded transitions and there are now 250810 transitions total divided into 175 trajectories
+loading from buffer 41 which has 0 already loaded
+Loaded replay buffer ckpt 41 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 5282 loaded transitions and there are now 256092 transitions total divided into 180 trajectories
+loading from buffer 35 which has 0 already loaded
+Loaded replay buffer ckpt 35 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 8766 loaded transitions and there are now 264858 transitions total divided into 185 trajectories
+loading from buffer 28 which has 8000 already loaded
+Loaded replay buffer ckpt 28 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 17185 loaded transitions and there are now 274043 transitions total divided into 190 trajectories
+loading from buffer 38 which has 8164 already loaded
+Loaded replay buffer ckpt 38 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 15979 loaded transitions and there are now 281858 transitions total divided into 195 trajectories
+loading from buffer 33 which has 6102 already loaded
+Loaded replay buffer ckpt 33 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 14018 loaded transitions and there are now 289774 transitions total divided into 200 trajectories
+loading from buffer 21 which has 0 already loaded
+Loaded replay buffer ckpt 21 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7822 loaded transitions and there are now 297596 transitions total divided into 205 trajectories
+loading from buffer 30 which has 0 already loaded
+Loaded replay buffer ckpt 30 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7642 loaded transitions and there are now 305238 transitions total divided into 210 trajectories
+load buffer done
+max rtg is 98
+max timestep is 2654
+create_dataset done
+train_dataset created
+model generated, starting training
+epoch 1 iter 4765: train loss 0.54304. lr 5.598320e-04: 100% 4766/4766 [42:31<00:00,  1.87it/s]
+target return: 90, eval return: 62
+epoch 2 iter 4765: train loss 0.50147. lr 4.500338e-04: 100% 4766/4766 [43:07<00:00,  1.84it/s]
+target return: 90, eval return: 43
+epoch 3 iter 4765: train loss 0.19363. lr 3.000293e-04: 100% 4766/4766 [43:50<00:00,  1.81it/s]
+target return: 90, eval return: 32
+epoch 4 iter 4765: train loss 0.10148. lr 1.500169e-04: 100% 4766/4766 [43:53<00:00,  1.81it/s]
+target return: 90, eval return: 33
+epoch 5 iter 4765: train loss 0.07996. lr 6.000000e-05: 100% 4766/4766 [43:45<00:00,  1.82it/s]
+target return: 90, eval return: 41
+saving training record
+model training done
+
+!python run_dt_atari.py --seed 123 --context_length 90 --epochs 5 --model_type 'reward_conditioned' --num_steps 350000 --num_buffers 50 --trajectories_per_buffer 5 --game 'Breakout' --batch_size 32 --data_dir_prefix /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/
+loading from buffer 45 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55b9db252000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 45 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 8874 loaded transitions and there are now 8874 transitions total divided into 5 trajectories
+loading from buffer 2 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bbaae6e000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 2 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 3244 loaded transitions and there are now 12118 transitions total divided into 10 trajectories
+loading from buffer 28 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55b9db252000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 28 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 8000 loaded transitions and there are now 20118 transitions total divided into 15 trajectories
+loading from buffer 34 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bbaae68000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 34 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 6762 loaded transitions and there are now 26880 transitions total divided into 20 trajectories
+loading from buffer 38 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bd4ff90000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 38 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 8164 loaded transitions and there are now 35044 transitions total divided into 25 trajectories
+loading from buffer 17 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bb8bfd6000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 17 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 9260 loaded transitions and there are now 44304 transitions total divided into 30 trajectories
+loading from buffer 19 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bd4ff90000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 19 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7879 loaded transitions and there are now 52183 transitions total divided into 35 trajectories
+loading from buffer 42 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bb8bfd6000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 42 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 5181 loaded transitions and there are now 57364 transitions total divided into 40 trajectories
+loading from buffer 22 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bd4ff90000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 22 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 6136 loaded transitions and there are now 63500 transitions total divided into 45 trajectories
+loading from buffer 33 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bb8bfd6000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 33 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 6102 loaded transitions and there are now 69602 transitions total divided into 50 trajectories
+loading from buffer 32 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bd4ff90000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 32 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 10311 loaded transitions and there are now 79913 transitions total divided into 55 trajectories
+loading from buffer 49 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bb8bfd6000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 49 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7434 loaded transitions and there are now 87347 transitions total divided into 60 trajectories
+loading from buffer 47 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bd4ff90000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 47 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7681 loaded transitions and there are now 95028 transitions total divided into 65 trajectories
+loading from buffer 9 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bb8bfd6000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 9 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 6215 loaded transitions and there are now 101243 transitions total divided into 70 trajectories
+loading from buffer 32 which has 10311 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bd4ff90000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 32 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 18268 loaded transitions and there are now 109200 transitions total divided into 75 trajectories
+loading from buffer 46 which has 0 already loaded
+tcmalloc: large alloc 7056007168 bytes == 0x55bb8bfd6000 @  0x7f7affecf1e7 0x7f7afe1a71fe 0x7f7afe1a7294 0x7f7afe1ea655 0x7f7afe1ac092 0x55b9a90b5b18 0x55b9a90b6b59 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9024af2 0x55b9a9053030 0x55b9a90b69c8 0x55b9a90de1d9 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9052e94 0x55b9a90b69c8 0x55b9a90dd544 0x55b9a9024af2 0x55b9a90263a8 0x55b9a908d8ac 0x55b9a90b575c 0x55b9a90b6b59 0x55b9a90de1d9
+Loaded replay buffer ckpt 46 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 6898 loaded transitions and there are now 116098 transitions total divided into 80 trajectories
+loading from buffer 32 which has 18268 already loaded
+Loaded replay buffer ckpt 32 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 27355 loaded transitions and there are now 125185 transitions total divided into 85 trajectories
+loading from buffer 47 which has 7681 already loaded
+Loaded replay buffer ckpt 47 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 14176 loaded transitions and there are now 131680 transitions total divided into 90 trajectories
+loading from buffer 25 which has 0 already loaded
+Loaded replay buffer ckpt 25 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7695 loaded transitions and there are now 139375 transitions total divided into 95 trajectories
+loading from buffer 19 which has 7879 already loaded
+Loaded replay buffer ckpt 19 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 16192 loaded transitions and there are now 147688 transitions total divided into 100 trajectories
+loading from buffer 14 which has 0 already loaded
+Loaded replay buffer ckpt 14 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7201 loaded transitions and there are now 154889 transitions total divided into 105 trajectories
+loading from buffer 36 which has 0 already loaded
+Loaded replay buffer ckpt 36 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 6931 loaded transitions and there are now 161820 transitions total divided into 110 trajectories
+loading from buffer 32 which has 27355 already loaded
+Loaded replay buffer ckpt 32 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 35965 loaded transitions and there are now 170430 transitions total divided into 115 trajectories
+loading from buffer 16 which has 0 already loaded
+Loaded replay buffer ckpt 16 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7221 loaded transitions and there are now 177651 transitions total divided into 120 trajectories
+loading from buffer 4 which has 0 already loaded
+Loaded replay buffer ckpt 4 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 5956 loaded transitions and there are now 183607 transitions total divided into 125 trajectories
+loading from buffer 49 which has 7434 already loaded
+Loaded replay buffer ckpt 49 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 14886 loaded transitions and there are now 191059 transitions total divided into 130 trajectories
+loading from buffer 3 which has 0 already loaded
+Loaded replay buffer ckpt 3 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 4789 loaded transitions and there are now 195848 transitions total divided into 135 trajectories
+loading from buffer 2 which has 3244 already loaded
+Loaded replay buffer ckpt 2 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7148 loaded transitions and there are now 199752 transitions total divided into 140 trajectories
+loading from buffer 20 which has 0 already loaded
+Loaded replay buffer ckpt 20 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 6984 loaded transitions and there are now 206736 transitions total divided into 145 trajectories
+loading from buffer 39 which has 0 already loaded
+Loaded replay buffer ckpt 39 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7458 loaded transitions and there are now 214194 transitions total divided into 150 trajectories
+loading from buffer 2 which has 7148 already loaded
+Loaded replay buffer ckpt 2 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 10092 loaded transitions and there are now 217138 transitions total divided into 155 trajectories
+loading from buffer 20 which has 6984 already loaded
+Loaded replay buffer ckpt 20 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 15973 loaded transitions and there are now 226127 transitions total divided into 160 trajectories
+loading from buffer 47 which has 14176 already loaded
+Loaded replay buffer ckpt 47 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 22748 loaded transitions and there are now 234699 transitions total divided into 165 trajectories
+loading from buffer 48 which has 0 already loaded
+Loaded replay buffer ckpt 48 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7837 loaded transitions and there are now 242536 transitions total divided into 170 trajectories
+loading from buffer 7 which has 0 already loaded
+Loaded replay buffer ckpt 7 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 8274 loaded transitions and there are now 250810 transitions total divided into 175 trajectories
+loading from buffer 41 which has 0 already loaded
+Loaded replay buffer ckpt 41 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 5282 loaded transitions and there are now 256092 transitions total divided into 180 trajectories
+loading from buffer 35 which has 0 already loaded
+Loaded replay buffer ckpt 35 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 8766 loaded transitions and there are now 264858 transitions total divided into 185 trajectories
+loading from buffer 28 which has 8000 already loaded
+Loaded replay buffer ckpt 28 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 17185 loaded transitions and there are now 274043 transitions total divided into 190 trajectories
+loading from buffer 38 which has 8164 already loaded
+Loaded replay buffer ckpt 38 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 15979 loaded transitions and there are now 281858 transitions total divided into 195 trajectories
+loading from buffer 33 which has 6102 already loaded
+Loaded replay buffer ckpt 33 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 14018 loaded transitions and there are now 289774 transitions total divided into 200 trajectories
+loading from buffer 21 which has 0 already loaded
+Loaded replay buffer ckpt 21 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7822 loaded transitions and there are now 297596 transitions total divided into 205 trajectories
+loading from buffer 30 which has 0 already loaded
+Loaded replay buffer ckpt 30 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7642 loaded transitions and there are now 305238 transitions total divided into 210 trajectories
+loading from buffer 27 which has 0 already loaded
+Loaded replay buffer ckpt 27 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7529 loaded transitions and there are now 312767 transitions total divided into 215 trajectories
+loading from buffer 34 which has 6762 already loaded
+Loaded replay buffer ckpt 34 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 15280 loaded transitions and there are now 321285 transitions total divided into 220 trajectories
+loading from buffer 33 which has 14018 already loaded
+Loaded replay buffer ckpt 33 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 21014 loaded transitions and there are now 328281 transitions total divided into 225 trajectories
+loading from buffer 12 which has 0 already loaded
+Loaded replay buffer ckpt 12 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 8632 loaded transitions and there are now 336913 transitions total divided into 230 trajectories
+loading from buffer 40 which has 0 already loaded
+Loaded replay buffer ckpt 40 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 7415 loaded transitions and there are now 344328 transitions total divided into 235 trajectories
+loading from buffer 3 which has 4789 already loaded
+Loaded replay buffer ckpt 3 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 9955 loaded transitions and there are now 349494 transitions total divided into 240 trajectories
+loading from buffer 42 which has 5181 already loaded
+Loaded replay buffer ckpt 42 from /content/drive/MyDrive/shared/Workspace/NUS/CS5446/decision-transformer/atari/dqn_replay/Breakout/1/replay_logs
+this buffer has 13343 loaded transitions and there are now 357656 transitions total divided into 245 trajectories
+load buffer done
+max rtg is 98
+max timestep is 2654
+create_dataset done
+train_dataset created
+model generated, starting training
+epoch 1 iter 11168: train loss 0.65683. lr 5.598285e-04: 100% 11169/11169 [54:36<00:00,  3.41it/s]
+target return: 90, eval return: 54
+epoch 2 iter 11168: train loss 0.39254. lr 4.500289e-04: 100% 11169/11169 [54:47<00:00,  3.40it/s]
+target return: 90, eval return: 48
+epoch 3 iter 11168: train loss 0.32245. lr 3.000250e-04: 100% 11169/11169 [54:29<00:00,  3.42it/s]
+target return: 90, eval return: 49
+epoch 4 iter 11168: train loss 0.34907. lr 1.500144e-04: 100% 11169/11169 [54:37<00:00,  3.41it/s]
+target return: 90, eval return: 75
+epoch 5 iter 11168: train loss 0.27390. lr 6.000000e-05: 100% 11169/11169 [55:19<00:00,  3.37it/s]
+target return: 90, eval return: 67
+saving training record
+model training done
